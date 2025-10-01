@@ -1,0 +1,253 @@
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #646cff;
+}
+
+.header h1 {
+  margin-bottom: 0.5rem;
+  color: #646cff;
+}
+
+.subtitle {
+  color: #888;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Scenario Selector */
+.scenario-selector {
+  background: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  border: 2px solid #333;
+}
+
+.scenario-selector h3 {
+  margin-top: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.scenario-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.scenario-btn {
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid #444;
+  border-radius: 8px;
+  background: #242424;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.scenario-btn:hover {
+  background: #333;
+  border-color: #646cff;
+}
+
+.scenario-btn.active {
+  background: #646cff;
+  border-color: #646cff;
+  color: #fff;
+}
+
+.scenario-description {
+  margin-top: 1rem;
+}
+
+.info-box {
+  padding: 1rem;
+  border-radius: 6px;
+  line-height: 1.6;
+}
+
+.info-box.warning {
+  background: rgba(255, 193, 7, 0.1);
+  border: 1px solid rgba(255, 193, 7, 0.3);
+  color: #ffc107;
+}
+
+.info-box.error {
+  background: rgba(244, 67, 54, 0.1);
+  border: 1px solid rgba(244, 67, 54, 0.3);
+  color: #f44336;
+}
+
+/* Contact Form */
+.contact-form {
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  border: 2px solid #333;
+}
+
+.contact-form h2 {
+  margin-top: 0;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #444;
+  border-radius: 6px;
+  background: #242424;
+  color: #fff;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+.form-group input.error,
+.form-group textarea.error {
+  border-color: #f44336;
+}
+
+.error-message {
+  display: block;
+  color: #f44336;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background: #646cff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #535bf2;
+}
+
+.submit-btn:disabled {
+  background: #444;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.status-message {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.status-message.success {
+  background: rgba(76, 175, 80, 0.1);
+  border: 1px solid rgba(76, 175, 80, 0.3);
+  color: #4caf50;
+}
+
+.status-message.error {
+  background: rgba(244, 67, 54, 0.1);
+  border: 1px solid rgba(244, 67, 54, 0.3);
+  color: #f44336;
+}
+
+/* PO Guide */
+.po-guide {
+  background: linear-gradient(135deg, #1a1a1a 0%, #242424 100%);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 2px solid #646cff;
+}
+
+.po-guide h3 {
+  margin-top: 0;
+  color: #646cff;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.checklist {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.check-item {
+  background: rgba(100, 108, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 6px;
+  border-left: 4px solid #646cff;
+}
+
+.check-item strong {
+  display: block;
+  color: #646cff;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.check-item ul {
+  margin: 0;
+  padding-left: 1.5rem;
+  color: #ccc;
+}
+
+.check-item li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 1rem;
+  }
+
+  .scenario-buttons {
+    flex-direction: column;
+  }
+
+  .scenario-btn {
+    width: 100%;
+  }
+}
